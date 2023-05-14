@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "lkcm",
+  "version": "${version}",
+
+  "name": "PrimeiroModDoLKCM",
+  "description": "Esse e o primeiro mod do lkcm",
+  "authors": [
+    "LKCM"
+  ],
+  "contact": {
+    "homepage": "https://lkcm.com.br/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.lkcm.mod.LkcmMod"
+    ]
+  },
+  "mixins": [
+    "lkcm.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "fabric-api": "*",
+    "minecraft": "~1.19.4",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
